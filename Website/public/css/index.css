@@ -2,22 +2,39 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
+body {
+	background-color: #0066cc;
+}
 
-img {
-	margin-top: 10px;
-	width: 450px;
-	margin-left: 200px;
+.logo1 {
+	margin-left: 10px;
+	margin-top: 8px;
+	float: left;
+}
+
+.polaroid {
+  width: 250px;
+  box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.formscontainer {
+	margin-right: 1px;
+	height: 20px;
 }
 
 .forms{
 	color: white;
-	border: 1px solid black;
 	background-color: #0099ff;
-	border-radius: 15px;
-	padding-left: 30px;
-	padding-right: 30px;
+	border: 3px solid black;
+	border-radius: 8px;
+	border-bottom: null;
+	position: relative;
+	padding: 5px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-left: 5px;
 	float: right;
-
 }
 
 .tab {
@@ -27,40 +44,46 @@ img {
 	border-radius: 8px;
 	border-bottom: null;
 	position: relative;
-	float: left;
 	padding: 10px;
 	padding-right: 20px;
 	padding-left: 20px;
-	margin-left: 5px;
-	
-	
+	//float:left;
 }
 
 .top {
-  height: 120px;
-	background-color: white;
+  height: 150px;
+	background-color: #0099ff;
 	margin-bottom: 20px;
 }
 
 .menu {
 		//background-color: whitesmoke;
-		border-top: 0px solid black;
-		border-bottom: 5px solid black;
+		//border-bottom: 3px solid black;
 		height: 40px;
 		font: bold 16px Arial, sans-serif;
-		border-radius: 10px;
+		//border-radius: 10px;
+		padding-top: 20px;
+		margin-top: 15px;
 }
 
 .content {
-	border-top: 5px solid black;
-	border-bottom: 5px solid black;
+	border: null;
 	height: 1000px;
-	//width: 50%;
+	width: 50%;
 	margin-top: 39px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #0099ff;
 	border-radius: 10px;
+}
+
+.contentcontainer {
+	background-color: white;
+	width: 80%;
+	height: 705px;
+	margin-top: 20px;
+	box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 	
 }
 
