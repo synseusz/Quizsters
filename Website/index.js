@@ -14,6 +14,10 @@ app.get('/index', (req, res) => {
 	res.sendFile(`${__dirname}/html/index.html`)
 })
 
+app.get('/game', (req, res) => {
+	res.sendFile(`${__dirname}/html/game.html`)
+})
+
 app.listen(port, () => {
 	console.log(`app listening on port ${port}`)
 })
