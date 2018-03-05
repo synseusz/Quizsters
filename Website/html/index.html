@@ -21,23 +21,53 @@
 		
 	<img class="logo" src="images/QuizstersLogo.png" alt="Logo"/>
 		
-				<nav class="menu">
-					<a class="btn tab" href="/"><b>Home</b></a>
-					<a class="btn tab" href="/game"><b>Game</b></a>
-					<a class="btn tab" href="/contact"><b>Contact</b></a>
-				</nav>
+				<div class="menu">
+					<button class="tab btn tablinks" onclick="changeTab(event, 'Home')">Home</button>
+  				<button class="tab btn tablinks" onclick="changeTab(event, 'Game')">Game</button>
+  				<button class="tab btn tablinks" onclick="changeTab(event, 'Contact')">Contact</button>
+				</div>
+		
+		
 	</div>
-			<center>
-			<div class="contentcontainer">
-				
+	
+		<center>
+			<div id="Home" class="contentcontainer">
+				<h1>Home</h1>
 			</div>
 		</center>
 	
-		<div class="footer">
-		<center><b>Footer</b></center>
-		</div>
+	<center>
+			<div id="Game" class="contentcontainer">
+				<h1>
+					Flash game
+				</h1>
+			</div>
+	</center>
 	
-
+	<center>
+			<div id="Contact" class="contentcontainer">
+				<h1>
+					Contact
+				</h1>
+			</div>
+	</center>
+	
+<script>
+	document.getElementById("Home").style.display = "block";
+	function changeTab(evt, tabName) {
+    var i, contentcontainer, tablinks;
+    contentcontainer = document.getElementsByClassName("contentcontainer");
+    for (i = 0; i < contentcontainer.length; i++) {
+        contentcontainer[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
 	
 		
 </div>
