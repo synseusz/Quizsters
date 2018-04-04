@@ -15,16 +15,12 @@
 	
 	<div class="top">
 		
-		<div>
-			<a class="btn forms" href="/"><b>Log In</b></a>
-			<a class="btn forms" href="/"><b>Register</b></a></div>
-		
 	<img class="logo" src="images/QuizstersLogo.png" alt="Logo"/>
 		
 				<div class="menu">
-					<button class="tab btn tablinks" onclick="changeTab(event, 'Home')">Home</button>
-  				<button class="tab btn tablinks" onclick="changeTab(event, 'Game')">Game</button>
-  				<button class="tab btn tablinks" onclick="changeTab(event, 'Contact')">Contact</button>
+					<button class="btn tab activeBtn" onclick="changeTab(event, 'Home')">Home</button>
+  				<button class="btn tab" onclick="changeTab(event, 'Game')">Game</button>
+					<button class="btn tab" onclick="changeTab(event, 'Contact')">Contact</button>
 				</div>
 		
 		
@@ -38,40 +34,36 @@
 	
 	<center>
 			<div id="Game" class="contentcontainer">
-				<h1>
-					Flash game
-				</h1>
+				<h1>Flash game</h1>
 			</div>
 	</center>
 	
 	<center>
 			<div id="Contact" class="contentcontainer">
-				<h1>
-					Contact
-				</h1>
+				<h1>Contact</h1>
 			</div>
 	</center>
 	
 <script>
 	document.getElementById("Home").style.display = "block";
 	function changeTab(evt, tabName) {
-    var i, contentcontainer, tablinks;
+    var i, contentcontainer, buttons;
     contentcontainer = document.getElementsByClassName("contentcontainer");
     for (i = 0; i < contentcontainer.length; i++) {
         contentcontainer[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
+		buttons = document.getElementsByClassName("btn tab");
+		for (i = 0; i < buttons.length; i++) {
+        buttons[i].className = buttons[i].className.replace(" activeBtn","");
+		}
     document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
+		evt.currentTarget.className += " activeBtn";
 }
 </script>
 	
-		
+
 </div>
-	
+
 
 </body>
 
