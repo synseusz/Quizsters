@@ -52,7 +52,7 @@ button {
 	border-radius: 10px 10px 10px 10px;
 }
 
-.contentcontainer {
+/layout2(replace if needed)/.contentcontainer {
 	display: none;
 	border: 3px solid #0066cc;
 	border-left: none;
@@ -63,7 +63,18 @@ button {
 	height: 975px;
 	margin-top: 30px;
 	position: center;
-	//box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contentcontainer {
+	display: none;
+	border: 1px solid black;
+	border-radius: 15px;
+	background-image: url('../images/Notebook_Paper.png');
+	width: 80%;
+	height: 925px;
+	margin-top: 30px;
+	position: center;
+	box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn {
